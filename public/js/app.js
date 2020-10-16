@@ -101,30 +101,93 @@
 /*!************************************!*\
   !*** ./resources/assets/js/app.js ***!
   \************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-var helloWorld = __webpack_require__(/*! ./hello-world */ "./resources/assets/js/hello-world.ts").helloWorld();
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _service_controller__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./service-controller */ "./resources/assets/js/service-controller.ts");
+/* harmony import */ var _service_controller__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_service_controller__WEBPACK_IMPORTED_MODULE_0__);
 
-console.log(helloWorld);
+console.log(_service_controller__WEBPACK_IMPORTED_MODULE_0__["ServiceController"].getEntityTypeItemNames());
 
 /***/ }),
 
-/***/ "./resources/assets/js/hello-world.ts":
-/*!********************************************!*\
-  !*** ./resources/assets/js/hello-world.ts ***!
-  \********************************************/
+/***/ "./resources/assets/js/core/dependencies.ts":
+/*!**************************************************!*\
+  !*** ./resources/assets/js/core/dependencies.ts ***!
+  \**************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.helloWorld = void 0;
-function helloWorld() {
-    return "Hello world!";
+exports.Entity = exports.Organisation = void 0;
+class Organisation {
+    constructor() {
+        this.name = 'Acme';
+    }
+    getName() {
+        return this.name;
+    }
 }
-exports.helloWorld = helloWorld;
+exports.Organisation = Organisation;
+class Entity {
+    constructor() {
+        this.name = 'Acme Production';
+    }
+    getName() {
+        return this.name;
+    }
+}
+exports.Entity = Entity;
+
+
+/***/ }),
+
+/***/ "./resources/assets/js/core/service.ts":
+/*!*********************************************!*\
+  !*** ./resources/assets/js/core/service.ts ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Service = void 0;
+const dependencies_1 = __webpack_require__(/*! ./dependencies */ "./resources/assets/js/core/dependencies.ts");
+class Service {
+    constructor() {
+        this.organisation = new dependencies_1.Organisation();
+        this.entity = new dependencies_1.Entity();
+    }
+    getEntityTypeItemNames() {
+        return [
+            this.organisation.getName(),
+            this.entity.getName()
+        ];
+    }
+}
+exports.Service = Service;
+
+
+/***/ }),
+
+/***/ "./resources/assets/js/service-controller.ts":
+/*!***************************************************!*\
+  !*** ./resources/assets/js/service-controller.ts ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+const service_1 = __webpack_require__(/*! ./core/service */ "./resources/assets/js/core/service.ts");
+const service = new service_1.Service();
+console.log(service.getEntityTypeItemNames());
 
 
 /***/ }),

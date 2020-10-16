@@ -1,4 +1,3 @@
-const helloWorld = require("./hello-world")
-    .helloWorld();
+import { ServiceController } from './service-controller';
 
-console.log(helloWorld);
+console.log(ServiceController.getEntityTypeItemNames());
