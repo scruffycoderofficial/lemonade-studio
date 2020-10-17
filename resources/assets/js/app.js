@@ -1,4 +1,4 @@
-const helloWorld = require("./hello-world")
-    .helloWorld();
+import $ from 'jquery';
+window.$ = window.jQuery = $;
 
-console.log(helloWorld);
+require("./service");

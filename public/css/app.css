@@ -1,0 +1,18 @@
+* {
+  font-family: "Monaco";
+  margin-top: 15px;
+}
+
+body {
+  background-color: #f5f2ea;
+}
+
+.ui.header:first-child {
+  margin-top: -0.142857em;
+  margin-bottom: 1.142857em;
+}
+
+.ui.form .field {
+  width: 500px;
+}
+
