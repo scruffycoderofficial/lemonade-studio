@@ -1,3 +1,6 @@
+import { injectable } from 'inversify';
+
+@injectable()
 export class Organisation{
     private readonly name: string = 'Acme';
 
@@ -6,6 +9,7 @@ export class Organisation{
     }
 }
 
+@injectable()
 export class Entity{
     private readonly name: string = 'Acme Production';
 

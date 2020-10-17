@@ -1,3 +1,4 @@
-import { ServiceController } from './service-controller';
+import $ from 'jquery';
+window.$ = window.jQuery = $;
 
-console.log(ServiceController.getEntityTypeItemNames());
+require("./service");
