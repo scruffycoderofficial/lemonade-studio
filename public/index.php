@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <meta charset="utf-8">
-    <title>Lemonade Culture</title>
+    <title>Lemonade Studio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Lemonade Information System" />
     <meta name="author" content="Luyanda Siko" />
@@ -14,7 +14,7 @@
             <div id="container">
                 <div class="ui container">
                     <div class="ui secondary menu">
-                        <div class="header item"><i class="counterclockwise rotated green large lemon icon"></i>Lemonade Culture</div>
+                        <div class="header item"><i class="counterclockwise rotated green large lemon icon"></i>Lemonade Studio</div>
                         <a class="active item">Home</a>
                         <a class="item">Messages</a>
                         <a class="item">Profile</a>

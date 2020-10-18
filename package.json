@@ -1,7 +1,7 @@
 {
-  "name": "lemonade",
+  "name": "lemonade-studio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Frontend for Digital Closuxe's Lemonade Studio",
   "main": "index.js",
   "scripts": {
     "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
