@@ -1,3 +1,13 @@
+@import '~jquery-ui/themes/base/all.css';
+
+/**
+* Load this Application's styling variables and 
+* any other common styling resources
+*/
 @import 'common/variables';
 
+/**
+* Load this Application's Layout styling and any 
+* other module's styling sheets
+*/
 @import 'modules/layout';
