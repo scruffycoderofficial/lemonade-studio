@@ -9,14 +9,19 @@ body{
     background-color: $background_color;
 }
 
-.ui.header:first-child {
-    margin-top: -0.142857em;
-    margin-bottom: 1.142857em;
+.ui {
+    .header:first-child {
+        margin-top: -0.142857em;
+        margin-bottom: 1.142857em;
+    }
+
+    .horizontal {
+        .list {
+            padding-left: 250px;
+        }
+    }
 }
 
-.ui.form {
-
-    .field{
-        width: 500px;
-    }
+.content-segment {
+    padding-top: 20px;
 }

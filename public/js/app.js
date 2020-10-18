@@ -14854,8 +14854,8 @@ __webpack_require__(/*! ./service */ "./resources/assets/js/service.ts");
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-const inversify_1 = __webpack_require__(/*! ../../../../node_modules/inversify */ "./node_modules/inversify/lib/inversify.js");
-const dependencies_1 = __webpack_require__(/*! ./dependencies */ "./resources/assets/js/core/dependencies.ts");
+var inversify_1 = __webpack_require__(/*! ../../../../node_modules/inversify */ "./node_modules/inversify/lib/inversify.js");
+var dependencies_1 = __webpack_require__(/*! ./dependencies */ "./resources/assets/js/core/dependencies.ts");
 var DiContainer = new inversify_1.Container();
 DiContainer.bind(dependencies_1.Organisation).toSelf();
 DiContainer.bind(dependencies_1.Entity).toSelf();
@@ -14881,30 +14881,32 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Entity = exports.Organisation = void 0;
-const inversify_1 = __webpack_require__(/*! inversify */ "./node_modules/inversify/lib/inversify.js");
-let Organisation = class Organisation {
-    constructor() {
+var inversify_1 = __webpack_require__(/*! inversify */ "./node_modules/inversify/lib/inversify.js");
+var Organisation = /** @class */ (function () {
+    function Organisation() {
         this.name = 'Acme';
     }
-    getName() {
+    Organisation.prototype.getName = function () {
         return this.name;
-    }
-};
-Organisation = __decorate([
-    inversify_1.injectable()
-], Organisation);
+    };
+    Organisation = __decorate([
+        inversify_1.injectable()
+    ], Organisation);
+    return Organisation;
+}());
 exports.Organisation = Organisation;
-let Entity = class Entity {
-    constructor() {
+var Entity = /** @class */ (function () {
+    function Entity() {
         this.name = 'Acme Production';
     }
-    getName() {
+    Entity.prototype.getName = function () {
         return this.name;
-    }
-};
-Entity = __decorate([
-    inversify_1.injectable()
-], Entity);
+    };
+    Entity = __decorate([
+        inversify_1.injectable()
+    ], Entity);
+    return Entity;
+}());
 exports.Entity = Entity;
 
 
@@ -14933,25 +14935,26 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Service = void 0;
-const inversify_1 = __webpack_require__(/*! ../../../../node_modules/inversify */ "./node_modules/inversify/lib/inversify.js");
-const dependencies_1 = __webpack_require__(/*! ./dependencies */ "./resources/assets/js/core/dependencies.ts");
-let Service = class Service {
-    constructor(organisation, entity) {
+var inversify_1 = __webpack_require__(/*! ../../../../node_modules/inversify */ "./node_modules/inversify/lib/inversify.js");
+var dependencies_1 = __webpack_require__(/*! ./dependencies */ "./resources/assets/js/core/dependencies.ts");
+var Service = /** @class */ (function () {
+    function Service(organisation, entity) {
         this.organisation = organisation;
         this.entity = entity;
     }
-    getEntityNames() {
+    Service.prototype.getEntityNames = function () {
         return [
             this.organisation.getName(),
             this.entity.getName()
         ];
-    }
-};
-Service = __decorate([
-    inversify_1.injectable(),
-    __param(0, inversify_1.inject(dependencies_1.Organisation)), __param(1, inversify_1.inject(dependencies_1.Entity)),
-    __metadata("design:paramtypes", [dependencies_1.Organisation, dependencies_1.Entity])
-], Service);
+    };
+    Service = __decorate([
+        inversify_1.injectable(),
+        __param(0, inversify_1.inject(dependencies_1.Organisation)), __param(1, inversify_1.inject(dependencies_1.Entity)),
+        __metadata("design:paramtypes", [dependencies_1.Organisation, dependencies_1.Entity])
+    ], Service);
+    return Service;
+}());
 exports.Service = Service;
 
 
@@ -14968,8 +14971,8 @@ exports.Service = Service;
 
 Object.defineProperty(exports, "__esModule", { value: true });
 __webpack_require__(/*! reflect-metadata */ "./node_modules/reflect-metadata/Reflect.js");
-const service_1 = __webpack_require__(/*! ./core/service */ "./resources/assets/js/core/service.ts");
-const container_1 = __webpack_require__(/*! ./core/container */ "./resources/assets/js/core/container.ts");
+var service_1 = __webpack_require__(/*! ./core/service */ "./resources/assets/js/core/service.ts");
+var container_1 = __webpack_require__(/*! ./core/container */ "./resources/assets/js/core/container.ts");
 console.log(container_1.default
     .resolve(service_1.Service)
     .getEntityNames());

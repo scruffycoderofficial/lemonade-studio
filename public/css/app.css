@@ -7,12 +7,16 @@ body {
   background-color: #f5f2ea;
 }
 
-.ui.header:first-child {
+.ui .header:first-child {
   margin-top: -0.142857em;
   margin-bottom: 1.142857em;
 }
 
-.ui.form .field {
-  width: 500px;
+.ui .horizontal .list {
+  padding-left: 250px;
+}
+
+.content-segment {
+  padding-top: 20px;
 }
 
