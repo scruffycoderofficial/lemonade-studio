@@ -9,14 +9,63 @@ body{
     background-color: $background_color;
 }
 
-.ui.header:first-child {
-    margin-top: -0.142857em;
-    margin-bottom: 1.142857em;
-}
+.ui {
+    .header:first-child {
+        margin-top: -0.142857em;
+        margin-bottom: 1.142857em;
+    }
 
-.ui.form {
-
-    .field{
-        width: 500px;
+    .horizontal {
+        .list {
+            padding-left: 250px;
+        }
     }
 }
+
+.content-segment {
+    padding-top: 20px;
+}
+
+.form-tabs{
+    background: $primary_color;
+}
+
+ul.tabs {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+
+    li{
+        background: none;
+        color: $secondary_color;
+        display: inline-block;
+        padding: 10px 15px;
+        cursor: pointer;
+
+        &.current{
+            color: brown;
+            background: $primary_color;
+        }
+    }
+}
+
+.tab-content{
+    display: none;
+    background: $primary_color;
+    padding: 15px;
+
+    &.current{
+        display: inherit;
+        background: $primary_color;
+    }
+}
+
+div [class*="left floated"] {
+    float: left;
+    margin-left: 0.25em;
+  }
+  
+  div [class*="right floated"] {
+    float: right;
+     margin-right: 0.25em;
+  } 
