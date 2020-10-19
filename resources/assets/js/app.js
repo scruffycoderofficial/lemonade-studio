@@ -3,7 +3,13 @@
  */
 require('./bootstrap');
 
+window.React = require('react');
+
+import ExampleComponent from './component/ExampleComponent';
+
 require('./modules/tabs');
+
+console.log(React);
 
 jQuery(function(e){
 

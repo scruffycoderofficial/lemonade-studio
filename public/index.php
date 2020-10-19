@@ -53,6 +53,7 @@
                                     </div>
                                 </h2>
                                 <div class="ui very padded segment content-segment">
+                                    <div id="example-component"></div>
                                     <!--- Start Account Settings Tabs-->
                                     <div class="ui form-tabs">
                                         <ul class="tabs">
