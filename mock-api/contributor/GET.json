@@ -1,0 +1,28 @@
+{
+    "id": 1,
+    "userName": "scruffycoderofficial",
+    "firstName": "Luyanda",
+    "lastName": "Siko",
+    "emailAddress": "director@acme.com",
+    "projects": [
+        {
+            "id": 1,
+            "name": "Project A",
+            "labels": [
+                {
+                    "icon": "suitcase",
+                    "size": "large",
+                    "value": "$765.43",
+                    "color": "danger"
+                },
+                {
+                    "icon": "time",
+                    "size": "large",
+                    "value": "$3648.43",
+                    "color": "success"
+                }
+            ]
+        }
+    ],
+    "description": "wuhduygysun u ihqefguyoauewdql7e7rf8w7  uheiwruwqueh"
+}
