@@ -3,8 +3,12 @@ Ideally, Lemonade Studio is supposed to serve as a UI Node in my stack. Lemonade
 
 ## Build Application
 
-``` $ npm run dev
+``` 
+$ npm run dev
+```
 
 ## Run Tests
 
-``` $ node_modules/.bin/mocha ./config.js ./src/LemonadeStudio.test.js
+``` 
+$ node_modules/.bin/mocha ./config.js ./src/LemonadeStudio.test.js
+```
