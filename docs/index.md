@@ -1,8 +1,17 @@
-## Welcome to GitHub Pages
+## Lemonade Studio
 
-You can use the [editor on GitHub](https://github.com/scruffycoderofficial/lemonade-studio/edit/develop/docs/index.md) to maintain and preview the content for your website in Markdown files.
+Having realized that I do not have enough front-end experience, I have 
+set myself up on a journey.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+At this given point we are able to interact with our front-end through 
+running an internally built PHP Web Server.
+
+A need of creating a second endpoint I could mock an API that I am still 
+busy putting together, I created a second service on its own port.
+
+- Mock API
+
+- Frontend Node
 
 ### Markdown
 
