@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  lemonade_studio:
+    build:
+      context: .
+      dockerfile: ./config/docker/build/Dockerfile.production
+    ports:
+      - 4001:80
